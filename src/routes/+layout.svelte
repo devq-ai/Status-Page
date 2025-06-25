@@ -14,6 +14,6 @@
 
 <style lang="postcss">
 	a {
-		@apply text-primary link hover:text-secondary;
+		@apply text-primary underline hover:text-secondary transition-colors;
 	}
 </style>
