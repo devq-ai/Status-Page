@@ -5,40 +5,23 @@ module.exports = {
 		extend: {
 			colors: {
 				// Dark Palette 1: "Midnight UI" (Elegant & Minimal)
-				primary: {
-					DEFAULT: '#1B03A3', // Neon Blue
-					foreground: '#E3E3E3', // Soft White
-				},
-				secondary: {
-					DEFAULT: '#9D00FF', // Neon Purple
-					foreground: '#A3A3A3', // Stone Grey
-				},
-				accent: {
-					DEFAULT: '#FF10F0', // Neon Pink
-				},
-				destructive: {
-					DEFAULT: '#FF3131', // Neon Red
-				},
-				success: {
-					DEFAULT: '#39FF14', // Neon Green
-				},
-				warning: {
-					DEFAULT: '#E9FF32', // Neon Yellow
-				},
-				info: {
-					DEFAULT: '#00FFFF', // Neon Cyan
-				},
-				background: {
-					primary: '#010B13', // Rich Black
-					secondary: '#0F1111', // Charcoal Black
-					surface: '#1A1A1A', // Midnight Black
-				},
-				foreground: {
-					primary: '#E3E3E3', // Soft White
-					secondary: '#A3A3A3', // Stone Grey
-					disabled: '#606770', // Neutral Grey
-				},
-				overlay: 'rgba(18, 18, 18, 0.67)', // Transparent Dark
+				primary: '#1B03A3',           // Neon Blue
+				secondary: '#9D00FF',         // Neon Purple
+				accent: '#FF10F0',            // Neon Pink (FIXED: Single value, not object)
+				destructive: '#FF3131',       // Neon Red
+				success: '#39FF14',           // Neon Green
+				warning: '#E9FF32',           // Neon Yellow
+				info: '#00FFFF',              // Neon Cyan
+				
+				// Background colors
+				'bg-primary': '#010B13',      // Rich Black
+				'bg-secondary': '#0F1111',    // Charcoal Black
+				'bg-surface': '#1A1A1A',      // Midnight Black
+				
+				// Foreground colors
+				'fg-primary': '#E3E3E3',      // Soft White
+				'fg-secondary': '#A3A3A3',    // Stone Grey
+				'fg-disabled': '#606770',     // Neutral Grey
 			},
 			fontFamily: {
 				mono: ['JetBrains Mono', 'Consolas', 'Monaco', 'monospace'],
