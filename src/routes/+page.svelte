@@ -1,12 +1,9 @@
-<script lang="ts">
-	import Incidents from '$lib/components/Incidents.svelte';
-	import Status from '$lib/components/Status.svelte';
-	import System from '$lib/components/System.svelte';
-
-	import type { PageData } from './$types';
-
-	export let data: PageData;
-</script>
+<style lang="postcss">
+	.header {
+		height: 100%;
+		background: linear-gradient(180deg, #FF10F0 60%, transparent 40%);
+	}
+</style>
 
 <div class="w-full bg-accent header min-h-[20vh] lg:min-h-[25vh] flex items-end justify-center">
 	<div class="h-full w-full mx-2 md:mx-12">
