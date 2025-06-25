@@ -12,10 +12,25 @@ const config = {
 	],
 
 	kit: {
-		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter()
+		// adapter-static for GitHub Pages deployment
+		adapter: adapter({
+			// Generate static files for GitHub Pages
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false,
+			strict: true
+		}),
+		
+		// Configure for GitHub Pages subdirectory deployment
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/Status-Page' : '',
+		},
+		
+		// Prerender all pages for static deployment
+		prerender: {
+			handleHttpError: 'warn'
+		}
 	}
 };
 
